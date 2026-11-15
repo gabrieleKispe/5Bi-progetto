@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il progetto della 5Bi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Il progetto della 5Bi</h1>
+            <p>I giovani e la fiducia nelle istituzioni</p>
+        </div>
+    </header>
+
+    <main class="full-width">
+        
+        <div class="main-container">
+            
+            <aside class="sidebar">
+                <section class="card">
+                    <h2>👥 Chi siamo</h2>
+                    <p>
+                        Siamo gli studenti della classe <strong>5B Informatica</strong> dell'<strong>Istituto Mattei</strong> di San Donato Milanese. <br>
+                        Appassionati di tecnologia e sviluppo software, abbiamo realizzato questo sito web per analizzare ed esporre il rapporto tra le nuove generazioni e il sistema istituzionale.<br><br>
+                    </p>
+                    <a href="chiSiamo.html" class="btn">Scopri il team &rarr;</a>
+                </section>
+            </aside>
+
+            <div class="body-area">
+                
+                <section class="card">
+                    <h2>💻 Il nostro lavoro</h2>
+                    <p>
+                        Abbiamo unito le nostre competenze informatiche per dare voce a un tema fondamentale. Il cuore del nostro progetto è un <strong>video inedito, ideato e realizzato interamente da noi</strong>, per analizzare e raccontare come i giovani vedono oggi la fiducia nelle istituzioni.
+                    </p>
+                    <p>
+                        In questo spazio digitale condividiamo il frutto del nostro lavoro, e il dietro le quinte del nostro percorso.
+                    </p>
+                    <a href="fasiLavoro.html" class="btn">Scopri di più &rarr;</a>
+                </section>
+
+                <section class="card video-section">
+                    <h2>Video del Progetto</h2>
+                    <div class="video-box">
+                        <div id="video-placeholder" onclick="caricaVideo()">
+                            <div class="play-icon">▶</div>
+                            <p>Clicca qui per riprodurre il video</p>
+                        </div>
+                        
+                        <iframe 
+                            id="mioVideo" 
+                            data-src="galleria/video/videoFinale.mp4" 
+                            title="Video del progetto"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Classe 5Bi — Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

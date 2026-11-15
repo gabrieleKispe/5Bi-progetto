@@ -1,0 +1,267 @@
+/*hero*/
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif;
+}
+
+body { 
+  background-color: #0092cc15; 
+  color: #222; 
+  line-height: 1.6;
+}
+
+.hero { 
+  width: 100%; 
+  min-height: 50vh; 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('galleria/tribunale.avif') center bottom 25%/cover no-repeat; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  color: #fff; 
+  padding: 40px 20px;
+}
+
+.hero-chisiamo { 
+  min-height: 60vh; 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('galleria/mattei.jpg') bottom/cover no-repeat;
+}
+
+.hero-fasilavoro { 
+  min-height: 60vh; 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('galleria/fasiLavoro.jpg') center/cover no-repeat;
+}
+
+.hero-text h1 { 
+  font-size: 2.5rem; 
+  margin-bottom: 10px;
+}
+
+.hero-text p { 
+  font-size: 1.1rem; 
+  color: #ddd;
+}
+
+.full-width { 
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.body-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card { 
+  background: #fff; 
+  width: 100%; 
+  padding: 30px; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 { 
+  color: #0092cc; 
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+.card p { 
+  font-size: 1rem; 
+  color: #555;
+}
+
+.dual-section { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dual-block { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dual-block img { 
+  width: 100%;
+  height: 160px; 
+  object-fit: cover; 
+  border-radius: 6px; 
+}
+
+.text-right { 
+  text-align: left; 
+}
+
+.feature-card { 
+  display: flex; 
+  gap: 25px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.feature-card img { 
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.feature-text { 
+  flex: 1;
+}
+
+.chisiamo-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.team-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.btn { 
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #0092cc; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 6px; 
+  font-weight: bold; 
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover { 
+  background-color: #035d81; 
+}
+
+.video-section { 
+  text-align: center;
+}
+
+.video-box { 
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  background-color: #111; 
+  margin-top: 15px;
+  border-radius: 12px; 
+  overflow: hidden; 
+  position: relative;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#video-placeholder { 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  color: #fff; 
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.play-icon { 
+  font-size: 2rem; 
+  background: #0092cc; 
+  width: 60px; 
+  height: 60px; 
+  line-height: 60px; 
+  border-radius: 50%; 
+  margin-bottom: 10px; 
+  padding-left: 4px;
+}
+
+footer { 
+  text-align: center; 
+  padding: 20px; 
+  background-color: #111; 
+  color: #fff; 
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) { 
+  .main-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .dual-section { 
+    grid-template-columns: 1fr; 
+  } 
+  
+  .feature-card { 
+    flex-direction: column;
+    text-align: center;
+  }
+}
